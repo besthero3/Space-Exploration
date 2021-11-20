@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4147169811
+    locked: 0
+  - name: Character
+    uniqueID: 2805383745
+    locked: 0
+  - name: Grabthing
+    uniqueID: 614812267
+    locked: 0
