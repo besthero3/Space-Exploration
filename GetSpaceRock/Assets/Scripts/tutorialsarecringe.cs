@@ -11,5 +11,6 @@ public class tutorialsarecringe : MonoBehaviour
     {
         Destroy(gameObject);
         //gameObject = rock
+        score.scoreValue += 200;
     }
 }
