@@ -5,16 +5,15 @@ using UnityEngine.UI;
 
 public class score : MonoBehaviour
 {
+    //Declares Variables
+    //Score starts at 0
+    //SerializeField allows that variable to be seen and changed in Unity
     public static int scoreValue = 0;
-    Text scoree;
-
-    void Start ()
-    {
-        scoree = GetComponent<Text>();
-    }
+    [SerializeField]public Text scoree;
 
     void Update ()
     {
+        //Updates the Score text
         scoree.text = "Score: " + scoreValue;
     }
 }
