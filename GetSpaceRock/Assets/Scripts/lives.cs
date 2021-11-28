@@ -28,6 +28,6 @@ public class lives : MonoBehaviour
         }
 
         //Updates the life text
-        lifeText.text = "Lives: " + livesCount;
+        lifeText.text = ": " + livesCount;
     }
 }
