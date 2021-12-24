@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//m u y  i m p o r t a n t e
+using UnityEngine.SceneManagement;
 
 public class rocksCollected : MonoBehaviour
 {
@@ -25,6 +27,11 @@ public class rocksCollected : MonoBehaviour
             //Console Message that displays extra life
             //We will put a sound effect in place here
             Debug.Log("Extra Life");
+
+            /*This makes it so once you get all of the rocks, or 
+             * finish the level, it sends you to an end screen 
+             * where you have the option to go to the next level.*/
+            SceneManager.LoadScene("FinishedLevel");
         }
 
         //Updates the rock collection text

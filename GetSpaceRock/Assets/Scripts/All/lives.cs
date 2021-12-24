@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class lives : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class lives : MonoBehaviour
             //Temporary Solution
             //Sets the gameOverText to active so it can be seen
             gameOverText.SetActive(true);
+
+            //this sends to the game over screen
+            SceneManager.LoadScene("GameOver");
         }
 
         //Updates the life text
