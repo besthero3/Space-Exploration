@@ -930,18 +930,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 6759888481327580490}
---- !u!114 &548155473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2460755638938278092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70ede419620e77743a936c528011635d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &643530866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2911,7 +2899,6 @@ GameObject:
   - component: {fileID: 227159925174036423}
   - component: {fileID: 931807911940921546}
   - component: {fileID: 6165866121003601720}
-  - component: {fileID: 548155473}
   - component: {fileID: 6759888481327580491}
   m_Layer: 0
   m_Name: player-stand-1

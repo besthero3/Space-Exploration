@@ -422,7 +422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362951579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.44, y: 0.14, z: 0}
+  m_LocalPosition: {x: 3.66, y: 0.39, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -719,18 +719,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 6759888481327580490}
---- !u!114 &548155473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2460755638938278092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70ede419620e77743a936c528011635d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &714056440
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,7 +914,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735204521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.29, y: -2.44, z: 0}
+  m_LocalPosition: {x: -0.16, y: -2.5, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1111,7 +1099,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795382836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.16, y: -2.2, z: 0}
+  m_LocalPosition: {x: 3.25, y: -2.37, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1371,7 +1359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993826202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.53, y: 0.33, z: 0}
+  m_LocalPosition: {x: -2.41, y: 0.7, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1901,7 +1889,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106427041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.32, y: -2.11, z: 0}
+  m_LocalPosition: {x: 7.13, y: -2.37, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2439,7 +2427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413707419}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.9, y: -2.39, z: 0}
+  m_LocalPosition: {x: -4.13, y: -2.41, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2637,7 +2625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475364182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.62, y: -1.33, z: 0}
+  m_LocalPosition: {x: 4.98, y: -1.37, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3090,7 +3078,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752710529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.07, y: 0.03, z: 0}
+  m_LocalPosition: {x: 6.05, y: 0.16, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3499,7 +3487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034733637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.08, y: 0.18, z: 0}
+  m_LocalPosition: {x: 10.3, y: 0.16, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3892,7 +3880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127424315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.6, y: -1.12, z: 0}
+  m_LocalPosition: {x: 8.91, y: -1.49, z: 0}
   m_LocalScale: {x: 0.159777, y: 0.1679709, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3959,7 +3947,6 @@ GameObject:
   - component: {fileID: 227159925174036423}
   - component: {fileID: 931807911940921546}
   - component: {fileID: 6165866121003601720}
-  - component: {fileID: 548155473}
   - component: {fileID: 6759888481327580491}
   m_Layer: 0
   m_Name: player-stand-1

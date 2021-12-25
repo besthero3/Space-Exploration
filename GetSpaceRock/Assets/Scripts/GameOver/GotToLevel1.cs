@@ -8,8 +8,10 @@ public class GotToLevel1 : MonoBehaviour
 {
 	void OnMouseUp()
 	{
-		print("I said don't press this asshole");
-		//lol this does not work so beware.
+		lives.livesCount = 5;
+		score.scoreValue = 0;
+		rocksCollected.rockCount = 0;
+		rocksCollectedLevel2.rockCountlvl2 = 0;
 		SceneManager.LoadScene("Main");
-	}
+}
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -60,6 +61,9 @@ public class playerMovement : MonoBehaviour
             lives.livesCount -= 1;
 
             //We will also need to add a RESPAWN FEATURE HERE and a transition screen showing the player lost a life. Animation or something 
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.name);
+            Debug.Log("-1 life, respawn to beginning of level");
         }
 
     }
