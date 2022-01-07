@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Ground
+  - stupidThing
+  - stupidThing2
   layers:
   - Default
   - TransparentFX
