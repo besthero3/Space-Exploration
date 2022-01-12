@@ -32,7 +32,7 @@ public class rocksCollectedLevel2 : MonoBehaviour
             /*This makes it so once you get all of the rocks, or 
              * finish the level, it sends you to an end screen 
              * where you have the option to go to the next level.*/
-            SceneManager.LoadScene("FinishedLevel");
+            //SceneManager.LoadScene("FinishedLevel");
         }
 
         //Updates the rock collection text

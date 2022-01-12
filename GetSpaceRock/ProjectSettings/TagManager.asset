@@ -10,6 +10,7 @@ TagManager:
   - stupidThing2
   - killEnemy
   - eh
+  - Level_2
   layers:
   - Default
   - TransparentFX

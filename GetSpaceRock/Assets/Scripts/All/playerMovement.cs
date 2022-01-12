@@ -68,6 +68,10 @@ public class playerMovement : MonoBehaviour
             Debug.Log("-1 life, respawn to beginning of level");
         }
 
+        if (other.tag == "Level_2") {
+            SceneManager.LoadScene("Level_2");
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
