@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraFollow : MonoBehaviour
+public class cameraFollow1 : MonoBehaviour
 {
     //room camera
     [SerializeField] private float speed;
@@ -15,13 +15,7 @@ public class cameraFollow : MonoBehaviour
 
     private void Update()
     {
-
         //bouge salope
-        transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
+        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
     }
-
-    //public void MoveToNewRoom(Transform _newRoom)
-    //{
-      //  currentPosX = _newRoom.position.x;
-    //}
 }

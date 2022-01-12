@@ -7,19 +7,21 @@ public class playerMovement : MonoBehaviour
     private Rigidbody2D body;
     //private Transform playerStartingPosition; 
     private Animator anim;
-    private bool grounded; 
-       
+    private bool grounded;
+    
 
     private void Awake()
     {
       //  playerStartingPosition = GetComponent<Transform>();
       //Grab references for rigidbody and animator from object
         body = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>(); 
+        anim = GetComponent<Animator>();
+        //float positionx = gameObject.transform.position.x;
     }
-
+    
     private void Update()
     {
+        //transform.localPosition.x = positionx.x;
         float horizontalInput = Input.GetAxis("Horizontal");
 
         body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);

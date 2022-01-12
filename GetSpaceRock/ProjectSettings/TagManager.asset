@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - stupidThing
   - stupidThing2
+  - killEnemy
+  - eh
   layers:
   - Default
   - TransparentFX
