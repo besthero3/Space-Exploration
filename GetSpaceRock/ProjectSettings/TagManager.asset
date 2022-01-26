@@ -11,6 +11,7 @@ TagManager:
   - killEnemy
   - eh
   - Level_2
+  - Level_3
   layers:
   - Default
   - TransparentFX

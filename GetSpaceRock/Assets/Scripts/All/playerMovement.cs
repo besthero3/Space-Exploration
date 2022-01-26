@@ -7,8 +7,7 @@ public class playerMovement : MonoBehaviour
     private Rigidbody2D body;
     //private Transform playerStartingPosition; 
     private Animator anim;
-    private bool grounded;
-    
+    private bool grounded;    
 
     private void Awake()
     {
@@ -45,6 +44,7 @@ public class playerMovement : MonoBehaviour
         anim.SetBool("grounded", grounded); 
     }
 
+
     private void jump()
     {
         body.velocity = new Vector2(Input.GetAxis("Horizontal"), 6);
@@ -70,6 +70,10 @@ public class playerMovement : MonoBehaviour
 
         if (other.tag == "Level_2") {
             SceneManager.LoadScene("Level_2");
+        }
+        if (other.tag == "Level_3")
+        {
+            SceneManager.LoadScene("GameOver");
         }
 
     }
