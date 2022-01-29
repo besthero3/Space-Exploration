@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI; 
 
 public class playerMovement : MonoBehaviour
 {
@@ -7,7 +9,9 @@ public class playerMovement : MonoBehaviour
     private Rigidbody2D body;
     //private Transform playerStartingPosition; 
     private Animator anim;
-    private bool grounded;    
+    private bool grounded;
+    public Text dialogueText;
+    public Image dialogueTextBackground; 
 
     private void Awake()
     {
@@ -75,6 +79,11 @@ public class playerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+        if (other.tag == "dialogue1") {
+            StartCoroutine(Dialogue()); 
+            //MAKE coroutines
+            //Player speed = 0;
+        }
 
     }
 
@@ -84,6 +93,13 @@ public class playerMovement : MonoBehaviour
             grounded = true;
         }
     }
+
+    IEnumerator Dialogue()
+    {
+        dialogueText.text = "Player: Hi guys just woke up from a nap";
+        yield return new WaitForSeconds(6); 
+    }
+
 
 }
  

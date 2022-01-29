@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class helpMenu : MonoBehaviour
 {
-    public GameObject instructions; 
+    public GameObject instructions;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -23,4 +23,5 @@ public class helpMenu : MonoBehaviour
             instructions.SetActive(false);
         }
     }
+   
 }
