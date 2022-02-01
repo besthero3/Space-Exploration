@@ -11,7 +11,9 @@ public class playerMovement : MonoBehaviour
     private Animator anim;
     private bool grounded;
     public Text dialogueText;
-    public Image dialogueTextBackground; 
+    public Image dialogueTextBackground;
+    public GameObject blocker; 
+    
 
     private void Awake()
     {
@@ -80,7 +82,8 @@ public class playerMovement : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
         if (other.tag == "dialogue1") {
-            StartCoroutine(Dialogue()); 
+            StartCoroutine(Dialogue());
+            Destroy(other.gameObject);
             //MAKE coroutines
             //Player speed = 0;
         }
@@ -96,10 +99,52 @@ public class playerMovement : MonoBehaviour
 
     IEnumerator Dialogue()
     {
-        dialogueText.text = "Player: Hi guys just woke up from a nap";
-        yield return new WaitForSeconds(6); 
+        dialogueText.text = "Player: Hello fellow astronauts, I just woke up from a nap.";
+        yield return new WaitForSeconds(4);
+
+        dialogueText.text = "Crew member: Hi <insert player name>, good to get some sleep before our mission ends and we go back to Earth in two days, it will be the start of 2254.";
+        yield return new WaitForSeconds(7);
+
+        dialogueText.text = "Player: Yeah what a great day...";
+        yield return new WaitForSeconds(3);
+
+        dialogueText.text = "Crew member 2: Wait what's that out the window?!!";
+        yield return new WaitForSeconds(4);
+
+        dialogueText.text = "(Play sound effect here/create image?)";
+        yield return new WaitForSeconds(3);
+
+        dialogueText.text = "Player: Earth... its gone";
+        yield return new WaitForSeconds(2);
+
+        dialogueText.text = "Player: Hurry get away from the debris, move further away!! "; 
+        yield return new WaitForSeconds(4);
+
+        dialogueText.text = "Crew member: Got it captain!";
+        yield return new WaitForSeconds(3);
+
+        dialogueText.text = "A short time later...";
+        yield return new WaitForSeconds(4);
+
+        dialogueText.text = "Crewmate: Now that we are safe, what do we do?";
+        yield return new WaitForSeconds(4);
+
+        dialogueText.text = "Player: We have to rescue our astronauts on Mars and Jupiter";
+        yield return new WaitForSeconds(4);
+
+        dialogueText.text = "Crew mate: What then? If Earth is gone what do we do?";
+        yield return new WaitForSeconds(3);
+
+        dialogueText.text = "Player: Then we need to see if planets are habitable so we can survive and try to carry on civilization...";
+        yield return new WaitForSeconds(5);
+
+        dialogueText.text = "Crewmate: The computer has identified six possible candidates";
+        yield return new WaitForSeconds(5);
+
+        dialogueText.text = "Player: And so the mission begins...";
+        yield return new WaitForSeconds(5);
+
+        Destroy(blocker);
     }
-
-
 }
  
