@@ -79,6 +79,10 @@ public class playerMovement : MonoBehaviour
         }
         if (other.tag == "Level_3")
         {
+            SceneManager.LoadScene("Level_3");
+        }
+        if (other.tag == "Level_4")
+        {
             SceneManager.LoadScene("GameOver");
         }
         if (other.tag == "dialogue1") {

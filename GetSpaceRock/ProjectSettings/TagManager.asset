@@ -13,6 +13,7 @@ TagManager:
   - Level_2
   - Level_3
   - dialogue1
+  - Level_4
   layers:
   - Default
   - TransparentFX
