@@ -75,11 +75,11 @@ public class playerMovement : MonoBehaviour
         }
 
         if (other.tag == "Level_2") {
-            SceneManager.LoadScene("Level_2");
+            SceneManager.LoadScene("FinishedLevel");
         }
         if (other.tag == "Level_3")
         {
-            SceneManager.LoadScene("Level_3");
+            SceneManager.LoadScene("FinishedLevel1");
         }
         if (other.tag == "Level_4")
         {
@@ -98,8 +98,32 @@ public class playerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground") {
             grounded = true;
+            body.gravityScale = 1;
+            speed = 10;
+
         }
+        else if (collision.gameObject.tag == "Wall")
+        {
+            StartCoroutine(sideWall()); 
+
+        }
+
+
     }
+
+    IEnumerator sideWall() {
+
+        speed = 1;
+        grounded = false;
+        body.gravityScale = 3;
+
+        yield return new WaitForSeconds(3);
+        speed = 10;
+        grounded = true;
+        body.gravityScale = 3;
+
+    }
+
 
     IEnumerator Dialogue()
     {
@@ -146,7 +170,13 @@ public class playerMovement : MonoBehaviour
         yield return new WaitForSeconds(5);
 
         dialogueText.text = "Player: And so the mission begins...";
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
+
+        dialogueText.text = "To start, collect green item!";
+        yield return new WaitForSeconds(3);
+
+
+
 
         Destroy(blocker);
     }
