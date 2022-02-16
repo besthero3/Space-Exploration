@@ -27,11 +27,11 @@ public class ehScript1 : MonoBehaviour
         varGameObject3.GetComponent<cameraFollow2>().enabled = true;
         varGameObject3.GetComponent<pewpew1>().enabled = false;
         print("this works!");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
 
         varGameObject3.GetComponent<cameraFollow2>().enabled = false;
         varGameObject3.GetComponent<pewpew1>().enabled = true;
         print("Thank fuck!");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(8);
     }
 }
