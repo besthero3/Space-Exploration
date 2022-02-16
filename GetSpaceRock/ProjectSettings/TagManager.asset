@@ -15,6 +15,7 @@ TagManager:
   - dialogue1
   - Level_4
   - Wall
+  - acidKiller
   layers:
   - Default
   - TransparentFX

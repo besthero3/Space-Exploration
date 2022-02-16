@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/FinishedLevel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/FinishedLevel1.unity
+    path: Assets/Scenes/FinishedLevel1.unity
     guid: d755fb58f14e7d740a025eb8783e1039
   - enabled: 1
-    path: Assets/FinishedLevel2.unity
+    path: Assets/Scenes/FinishedLevel2.unity
     guid: d0efad5239e63b34ca4ced60f98907de
   - enabled: 1
-    path: Assets/dedication.unity
+    path: Assets/Scenes/dedication.unity
     guid: 13701c79540704b43bbd9b401795343e
   - enabled: 1
     path: Assets/Scenes/Main.unity
