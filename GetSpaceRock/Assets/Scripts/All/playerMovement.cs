@@ -83,7 +83,7 @@ public class playerMovement : MonoBehaviour
         }
         if (other.tag == "Level_4")
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("Level_4");
         }
         if (other.tag == "dialogue1") {
             StartCoroutine(Dialogue());
@@ -105,6 +105,11 @@ public class playerMovement : MonoBehaviour
         else if (collision.gameObject.tag == "Wall")
         {
             StartCoroutine(sideWall()); 
+
+        }
+        else if (collision.gameObject.tag == "bouncy")
+        {
+            jump();
 
         }
 

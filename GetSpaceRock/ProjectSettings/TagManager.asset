@@ -16,6 +16,7 @@ TagManager:
   - Level_4
   - Wall
   - acidKiller
+  - bouncy
   layers:
   - Default
   - TransparentFX
