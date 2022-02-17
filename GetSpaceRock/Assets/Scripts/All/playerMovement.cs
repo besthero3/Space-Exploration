@@ -85,6 +85,14 @@ public class playerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("Level_4");
         }
+        if (other.tag == "Level_5")
+        {
+            SceneManager.LoadScene("Level_5");
+        }
+        if (other.tag == "Level_6")
+        {
+            SceneManager.LoadScene("FinishedLevel");
+        }
         if (other.tag == "dialogue1") {
             StartCoroutine(Dialogue());
             Destroy(other.gameObject);
