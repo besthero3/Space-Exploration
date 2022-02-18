@@ -216,10 +216,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 136001471}
+  - component: {fileID: 136001476}
   - component: {fileID: 136001475}
   - component: {fileID: 136001474}
   - component: {fileID: 136001472}
-  - component: {fileID: 136001476}
   m_Layer: 0
   m_Name: ButtonNextLevel
   m_TagString: Untagged
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 136001470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b71ea619cf11e2a489e9d5fb5443d357, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b5ba6a2b56a91443bab49cbfb3bbfe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &937159912
@@ -480,10 +480,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The highest mountain discovered is the Olympus Mons, which is located
-    on Mars.
-
-'
+  m_Text: "The Milky Way galaxy is 105,700 light-years wide.\r"
 --- !u!222 &1013011157
 CanvasRenderer:
   m_ObjectHideFlags: 0

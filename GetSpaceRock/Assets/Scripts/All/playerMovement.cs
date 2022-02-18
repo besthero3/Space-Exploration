@@ -76,22 +76,27 @@ public class playerMovement : MonoBehaviour
 
         if (other.tag == "Level_2") {
             SceneManager.LoadScene("FinishedLevel");
+            enemyHealth.enemyHealthNum = 30;
         }
         if (other.tag == "Level_3")
         {
             SceneManager.LoadScene("FinishedLevel1");
+            enemyHealth.enemyHealthNum = 30;
         }
         if (other.tag == "Level_4")
         {
-            SceneManager.LoadScene("Level_4");
+            SceneManager.LoadScene("FinishedLevel3");
+            enemyHealth.enemyHealthNum = 30;
         }
         if (other.tag == "Level_5")
         {
-            SceneManager.LoadScene("Level_5");
+            SceneManager.LoadScene("FinishedLevel2 2");
+            enemyHealth.enemyHealthNum = 30;
         }
         if (other.tag == "Level_6")
         {
             SceneManager.LoadScene("FinishedLevel");
+            enemyHealth.enemyHealthNum = 30;
         }
         if (other.tag == "dialogue1") {
             StartCoroutine(Dialogue());
