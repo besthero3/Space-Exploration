@@ -99,7 +99,9 @@ public class playerMovement : MonoBehaviour
             enemyHealth.enemyHealthNum = 30;
         }
         if (other.tag == "dialogue1") {
+            speed = 0;
             StartCoroutine(Dialogue());
+         //speed = 10; 
             Destroy(other.gameObject);
             //MAKE coroutines
             //Player speed = 0;
@@ -109,10 +111,10 @@ public class playerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground") {
+        if (collision.gameObject.tag == "Ground" && collision.gameObject.tag != "dialogue1") {
             grounded = true;
             body.gravityScale = 1;
-            speed = 10;
+           // speed = 10;
 
         }
         else if (collision.gameObject.tag == "Wall")
@@ -122,29 +124,32 @@ public class playerMovement : MonoBehaviour
         }
         else if (collision.gameObject.tag == "bouncy")
         {
-            jump();
+           // body.gravityScale = 0.1; 
+            body.velocity = new Vector2(Input.GetAxis("Horizontal"), 11);
+            anim.SetTrigger("jump");
+            grounded = false;
 
         }
-
 
     }
 
     IEnumerator sideWall() {
 
-        speed = 1;
+        speed = 6;
         grounded = false;
-        body.gravityScale = 3;
+        body.gravityScale = 2;
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         speed = 10;
-        grounded = true;
-        body.gravityScale = 3;
+        //grounded = ;
+        body.gravityScale = 1;
 
     }
 
 
     IEnumerator Dialogue()
     {
+
         dialogueText.text = "Player: Hello fellow astronauts, I just woke up from a nap.";
         yield return new WaitForSeconds(4);
 
@@ -191,9 +196,8 @@ public class playerMovement : MonoBehaviour
         yield return new WaitForSeconds(3);
 
         dialogueText.text = "To start, collect green item!";
-        yield return new WaitForSeconds(3);
-
-
+        speed = 10; 
+        yield return new WaitForSeconds(1);
 
 
         Destroy(blocker);
