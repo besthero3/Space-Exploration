@@ -9,12 +9,14 @@ public class destroyRockWhenCollect : MonoBehaviour
     //this kills rock
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
-        //gameObject = rock
-
+        if (collision.tag == "Player")
+        {
+            Destroy(gameObject);
+            //gameObject = rock
+            rocksCollected.rockCount++;
+            score.scoreValue += 200;
+        }
         //Adds one to the rocks collected count
-        rocksCollected.rockCount++; 
-        score.scoreValue += 200;
 
     }
 }

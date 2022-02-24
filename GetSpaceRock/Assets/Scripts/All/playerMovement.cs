@@ -74,6 +74,18 @@ public class playerMovement : MonoBehaviour
             Debug.Log("-1 life, respawn to beginning of level");
         }
 
+        if (other.tag == "MovingEnemy")
+        {
+
+            //Subtract one from lives count
+            lives.livesCount -= 1;
+
+            //We will also need to add a RESPAWN FEATURE HERE and a transition screen showing the player lost a life. Animation or something 
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.name);
+            Debug.Log("-1 life, respawn to beginning of level");
+        }
+
         if (other.tag == "Level_2") {
             SceneManager.LoadScene("FinishedLevel");
             enemyHealth.enemyHealthNum = 30;
@@ -95,9 +107,16 @@ public class playerMovement : MonoBehaviour
         }
         if (other.tag == "Level_6")
         {
-            SceneManager.LoadScene("FinishedLevel");
+            SceneManager.LoadScene("Level_6");
             enemyHealth.enemyHealthNum = 30;
         }
+        if (other.tag == "Level_7")
+        {
+            SceneManager.LoadScene("Level_7");
+            enemyHealth.enemyHealthNum = 30;
+        }
+
+
         if (other.tag == "dialogue1") {
             speed = 0;
             StartCoroutine(Dialogue());
@@ -111,12 +130,50 @@ public class playerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+
         if (collision.gameObject.tag == "Ground" && collision.gameObject.tag != "dialogue1") {
             grounded = true;
             body.gravityScale = 1;
            // speed = 10;
 
         }
+        if (collision.gameObject.tag == "movingPlatform" && collision.gameObject.tag != "dialogue1")
+        {
+            grounded = true;
+            body.gravityScale = 1;
+            // speed = 10;
+
+        }
+       /* if (collision.gameObject.tag == "movingPlatform1" && collision.gameObject.tag != "dialogue1")
+        {
+            grounded = true;
+            body.gravityScale = 1;
+            // speed = 10;
+
+        }
+        if (collision.gameObject.tag == "movingPlatform2" && collision.gameObject.tag != "dialogue1")
+        {
+            grounded = true;
+            body.gravityScale = 1;
+            // speed = 10;
+
+        }
+        if (collision.gameObject.tag == "movingPlatform3" && collision.gameObject.tag != "dialogue1")
+        {
+            grounded = true;
+            body.gravityScale = 1;
+            // speed = 10;
+
+        }
+        if (collision.gameObject.tag == "movingPlatform4" && collision.gameObject.tag != "dialogue1")
+        {
+            grounded = true;
+            body.gravityScale = 1;
+            // speed = 10;
+
+        }
+       */
         else if (collision.gameObject.tag == "Wall")
         {
             StartCoroutine(sideWall()); 

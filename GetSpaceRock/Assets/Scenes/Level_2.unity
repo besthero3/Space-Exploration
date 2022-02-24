@@ -1265,7 +1265,7 @@ GameObject:
   - component: {fileID: 972014890}
   m_Layer: 0
   m_Name: player-stand-1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1385,6 +1385,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  dialogueText: {fileID: 0}
+  dialogueTextBackground: {fileID: 0}
+  blocker: {fileID: 0}
 --- !u!50 &972014896
 Rigidbody2D:
   serializedVersion: 4

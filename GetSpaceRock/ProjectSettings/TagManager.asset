@@ -19,6 +19,13 @@ TagManager:
   - bouncy
   - Level_5
   - Level_6
+  - MovingEnemy
+  - movingPlatform
+  - movingPlatform1
+  - movingPlatform2
+  - movingPlatform3
+  - movingPlatform4
+  - Level_7
   layers:
   - Default
   - TransparentFX
