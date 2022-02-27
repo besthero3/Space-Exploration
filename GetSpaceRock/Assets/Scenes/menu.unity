@@ -725,7 +725,7 @@ GameObject:
   - component: {fileID: 852728941}
   - component: {fileID: 852728940}
   - component: {fileID: 852728939}
-  - component: {fileID: 852728938}
+  - component: {fileID: 852728942}
   m_Layer: 0
   m_Name: ButtonNextLevel
   m_TagString: Untagged
@@ -753,18 +753,6 @@ RectTransform:
   m_AnchoredPosition: {x: 20.768, y: -504.09598}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &852728938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852728936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5790277059bb31499715a39ad4dc89f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &852728939
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -838,6 +826,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &852728942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852728936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bcf8548b5440c4380e655bbac185bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &964450788
 GameObject:
   m_ObjectHideFlags: 0
