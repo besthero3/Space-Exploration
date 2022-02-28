@@ -3,25 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class buttonCut1 : MonoBehaviour
+public class buttonCut2 : MonoBehaviour
 {
-    
     void Start()
     {
         //for testing
-        
-       StartCoroutine(CutsceneLvl());
+
+        StartCoroutine(CutsceneLvl2());
 
     }
 
-    IEnumerator CutsceneLvl() {
+    IEnumerator CutsceneLvl2()
+    {
 
         yield return new WaitForSeconds(2);
 
-        SceneManager.LoadScene("Level_2");
+        SceneManager.LoadScene("Level_3");
 
     }
-
-
-
 }

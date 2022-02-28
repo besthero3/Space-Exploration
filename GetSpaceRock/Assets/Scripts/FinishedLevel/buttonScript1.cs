@@ -12,6 +12,8 @@ public class buttonScript1 : MonoBehaviour
         //for testing
         print("Please Work");
         //This sends the user to Level 2
-        SceneManager.LoadScene("Level_3");
+        SceneManager.LoadScene("Cutscene2");
     }
+
+
 }

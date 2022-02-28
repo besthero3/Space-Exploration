@@ -9,8 +9,9 @@ public class rocksCollected : MonoBehaviour
 {
     //Declaring Variables
     //Rocks Collected starts at 0
-    public static int rockCount = 0;
     public Text rockText;
+
+    public static int rockCount = 0;
 
     void Update()
     {

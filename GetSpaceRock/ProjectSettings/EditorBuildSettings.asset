@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/cutscene.unity
     guid: adbad2c562be68249a73559bc657d679
   - enabled: 1
+    path: Assets/Scenes/Cutscene2.unity
+    guid: 9229c8e54c2f91f4ab4b29a1b7aa49eb
+  - enabled: 1
     path: Assets/Scenes/FinishedLevel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

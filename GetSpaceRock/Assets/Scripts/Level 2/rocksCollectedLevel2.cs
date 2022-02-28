@@ -7,17 +7,25 @@ using UnityEngine.SceneManagement;
 
 //This is specificly for level 2 cause Unitys a bitch
 public class rocksCollectedLevel2 : MonoBehaviour
+
 {
+
+    //rocksCollected plusObj = new rocksCollected();
+
     //Declaring Variables
     //Rocks Collected starts at 0
-    public static int rockCountlvl2 = 0;
+
+    public static int rockCountlvl2 = 0 + rocksCollected.rockCount;
+
     public Text rockText;
+
+
 
     void Update()
     {
         //Checks if 5 rocks have been collected... 
         //We can change this number later if needed
-        if (rockCountlvl2 == 10)
+        if (rockCountlvl2 == 5)
         {
             //Adds a life
             lives.livesCount += 1;
