@@ -207,50 +207,26 @@ public class playerMovement : MonoBehaviour
     IEnumerator Dialogue()
     {
 
-        dialogueText.text = "Player: Hello fellow astronauts, I just woke up from a nap.";
-        yield return new WaitForSeconds(4);
-
-        dialogueText.text = "Crew member: Hi <insert player name>, good to get some sleep before our mission ends and we go back to Earth in two days, it will be the start of 2254.";
-        yield return new WaitForSeconds(7);
-
-        dialogueText.text = "Player: Yeah what a great day...";
+        dialogueText.text = "Astronaut 1: Thank goodness you found us, Captain! Did you see those robots(?) that were coming after us?";
         yield return new WaitForSeconds(3);
 
-        dialogueText.text = "Crew member 2: Wait what's that out the window?!!";
+        dialogueText.text = "Astronaut 2: We have bigger problems to worry about. Captain, the Earth… it’s gone.";
         yield return new WaitForSeconds(4);
 
-        dialogueText.text = "(Play sound effect here/create image?)";
-        yield return new WaitForSeconds(3);
-
-        dialogueText.text = "Player: Earth... its gone";
+        dialogueText.text = "Astronaut 1: …";
         yield return new WaitForSeconds(2);
 
-        dialogueText.text = "Player: Hurry get away from the debris, move further away!! "; 
+        dialogueText.text = "Astronaut 2: We have enough supplies and fuel on the rocket to finish our original mission, exploring the nearby Andromeda Galaxy for new planets and life forms.";
         yield return new WaitForSeconds(4);
 
-        dialogueText.text = "Crew member: Got it captain!";
+        dialogueText.text = "But now, we won’t just be searching for the sake of science. We have to find a new home, somewhere we can begin again.";
         yield return new WaitForSeconds(3);
 
-        dialogueText.text = "A short time later...";
+        dialogueText.text = "Astronaut 1: What about the other two missions that went into the Andromeda? We should try and contact them to see what they’ve found.";
         yield return new WaitForSeconds(4);
 
-        dialogueText.text = "Crewmate: Now that we are safe, what do we do?";
-        yield return new WaitForSeconds(4);
-
-        dialogueText.text = "Player: We have to rescue our astronauts on Mars and Jupiter";
-        yield return new WaitForSeconds(4);
-
-        dialogueText.text = "Crew mate: What then? If Earth is gone what do we do?";
-        yield return new WaitForSeconds(3);
-
-        dialogueText.text = "Player: Then we need to see if planets are habitable so we can survive and try to carry on civilization...";
-        yield return new WaitForSeconds(5);
-
-        dialogueText.text = "Crewmate: The computer has identified six possible candidates";
-        yield return new WaitForSeconds(5);
-
-        dialogueText.text = "Player: And so the mission begins...";
-        yield return new WaitForSeconds(3);
+        dialogueText.text = "Astronaut 2: That would be a good idea, but that robot destroyed our comms. We’ll have to go there ourselves. Captain, let’s chart our course for Planet Aeries, touchdown point of the first Andromeda expedition - Artemis 18."; 
+        yield return new WaitForSeconds(7);
 
         dialogueText.text = "To start, collect green item!";
         speed = 10; 

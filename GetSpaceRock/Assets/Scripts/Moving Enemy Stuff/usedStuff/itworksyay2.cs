@@ -9,7 +9,7 @@ public class itworksyay2 : MonoBehaviour
         //stupid thing2 is the second colliders tag/ the collider that moves it left
         if (whatever2.tag == "stupidThing2")
         {
-            GameObject varGameObject = GameObject.Find("bee");
+            GameObject varGameObject = GameObject.Find("bee (4)");
             //this disables the script that moves the enemy right and enables the one that moves it left.
             varGameObject.GetComponent<rightname>().enabled = false;
             varGameObject.GetComponent<name>().enabled = true;
