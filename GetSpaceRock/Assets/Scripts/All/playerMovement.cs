@@ -301,7 +301,7 @@ public class playerMovement : MonoBehaviour
         dialogueText.text = "Astronaut 2: That would be a good idea, but that robot destroyed our comms. We’ll have to go there ourselves. Captain, let’s chart our course for Planet Aeries, touchdown point of the first Andromeda expedition - Artemis 18."; 
         yield return new WaitForSeconds(7);
 
-        dialogueText.text = "To start, collect green item!";
+        dialogueText.text = "To start, go to the rocket!";
         speed = 10; 
         yield return new WaitForSeconds(1);
 
