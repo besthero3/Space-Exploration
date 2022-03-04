@@ -12,7 +12,22 @@ public class playerMovement : MonoBehaviour
     private bool grounded;
     public Text dialogueText;
     public Image dialogueTextBackground;
-    public GameObject blocker; 
+    public GameObject blocker;
+
+    public AudioClip background;
+
+    //public AudioClip jumpSound;
+    //public AudioClip landing;
+    //public AudioClip death;
+
+
+    
+
+
+
+
+
+    AudioSource playMusic; 
     
 
     private void Awake()
@@ -22,8 +37,15 @@ public class playerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         //float positionx = gameObject.transform.position.x;
+        playMusic = GetComponent<AudioSource>();
+
     }
-    
+
+    public void Start()
+    {
+       // playMusic.PlayOneShot(background, 0.8F);
+    }
+
     private void Update()
     {
         //transform.localPosition.x = positionx.x;
@@ -43,6 +65,7 @@ public class playerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow) && grounded) {
             jump();      
+
         }
 
         //Set animator parameters
@@ -54,7 +77,8 @@ public class playerMovement : MonoBehaviour
     private void jump()
     {
         body.velocity = new Vector2(Input.GetAxis("Horizontal"), 6);
-        anim.SetTrigger("jump"); 
+        anim.SetTrigger("jump");
+        //playMusic.PlayOneShot(jumpSound, 0.8F);
         grounded = false; 
     }
 
@@ -89,6 +113,7 @@ public class playerMovement : MonoBehaviour
         if (other.tag == "Level_2") {
             SceneManager.LoadScene("FinishedLevel");
             enemyHealth.enemyHealthNum = 30;
+
         }
         if (other.tag == "Level_3")
         {
@@ -217,6 +242,7 @@ public class playerMovement : MonoBehaviour
             body.velocity = new Vector2(Input.GetAxis("Horizontal"), 11);
             anim.SetTrigger("jump");
             grounded = false;
+           // playMusic.PlayOneShot(jumpSound, 0.8F);
 
         }
 

@@ -2111,6 +2111,7 @@ GameObject:
   - component: {fileID: 652508326}
   - component: {fileID: 652508325}
   - component: {fileID: 652508327}
+  - component: {fileID: 652508328}
   m_Layer: 0
   m_Name: TriggerForLevel2(inlvl1)
   m_TagString: Level_8
@@ -2243,6 +2244,102 @@ PolygonCollider2D:
       - {x: 3.546875, y: -5.4375}
       - {x: 4.46875, y: -5.140625}
       - {x: 4.5, y: -5.109375}
+--- !u!82 &652508328
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652508322}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 26364aaf1f64b40c1a047b0bacfbd10e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &685328998
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,8 +3536,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Arrow Keys - Move\nPress Space - Shoot\nPress Up Arrow - Jump\nCollect
-    Rocks for lives\nCollect Astronaut at the end of level to move on \n"
+  m_text: 'Arrow Keys - Move
+
+    Press Space - Shoot
+
+    Press Up Arrow - Jump
+
+    Collect
+    Gears for lives
+
+    Collect Rocket at the end of level to move on '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -4742,6 +4847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bece924a8c0f3f146b1aa65c54e9a020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  death: {fileID: 0}
 --- !u!114 &1215529060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4754,6 +4860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c53945f436efab44a754e5920d3bdcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hit: {fileID: 0}
 --- !u!1001 &1261781324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6415,6 +6522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bece924a8c0f3f146b1aa65c54e9a020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  death: {fileID: 8300000, guid: fdf061ed6c55fb249905d2e126572e63, type: 3}
 --- !u!114 &1922099215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6427,6 +6535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c53945f436efab44a754e5920d3bdcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hit: {fileID: 8300000, guid: d756da811e33be44ab3c33b8d1e06584, type: 3}
 --- !u!114 &1922099216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7587,6 +7696,7 @@ MonoBehaviour:
   dialogueText: {fileID: 2095912313}
   dialogueTextBackground: {fileID: 700671293}
   blocker: {fileID: 458415052}
+  background: {fileID: 8300000, guid: 26364aaf1f64b40c1a047b0bacfbd10e, type: 3}
 --- !u!4 &6759888481327580490
 Transform:
   m_ObjectHideFlags: 0
@@ -7634,6 +7744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f83d77c07a81c14d8f6b774adae6be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shoot: {fileID: 8300000, guid: fdf061ed6c55fb249905d2e126572e63, type: 3}
 --- !u!60 &6759888481327580493
 PolygonCollider2D:
   m_ObjectHideFlags: 0
