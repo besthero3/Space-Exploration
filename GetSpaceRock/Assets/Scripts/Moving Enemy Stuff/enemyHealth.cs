@@ -18,7 +18,7 @@ public class enemyHealth : MonoBehaviour
         if (enemyHealthNum <= 0)
         {
             playMusic2 = GetComponent<AudioSource>();
-            playMusic2.PlayOneShot(death, 1F);
+            //playMusic2.PlayOneShot(death, 1F);
             Destroy(gameObject);
             GameObject varGameObject2 = GameObject.Find("pew");
             varGameObject2.GetComponent<cameraFollow1>().enabled = true;

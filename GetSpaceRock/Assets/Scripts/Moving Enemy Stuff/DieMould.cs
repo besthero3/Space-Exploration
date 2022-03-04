@@ -17,7 +17,7 @@ public class DieMould : MonoBehaviour
         //bullet = pew/killEnemy
         if (whatever3.tag == "killEnemy")
         {
-            playMusic3.PlayOneShot(hit, 1F);
+            //playMusic3.PlayOneShot(hit, 1F);
             enemyHealth.enemyHealthNum -= 10;
             GameObject varGameObject2 = GameObject.Find("pew");
             varGameObject2.GetComponent<cameraFollow1>().enabled = true;

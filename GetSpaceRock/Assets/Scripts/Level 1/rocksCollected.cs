@@ -37,7 +37,7 @@ public class rocksCollected : MonoBehaviour
         }
 
         //Updates the rock collection text
-        rockText.text = "Rocks: " + rockCount;
+        rockText.text = "Gears: " + rockCount;
 
 
     }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 //This is specificly for level 2 cause Unitys a bitch
-public class rocksCollectedLevel2 : MonoBehaviour
+public class rocksCollected5 : MonoBehaviour
 
 {
 
@@ -15,7 +15,7 @@ public class rocksCollectedLevel2 : MonoBehaviour
     //Declaring Variables
     //Rocks Collected starts at 0
 
-    public static int rockCountlvl2 = 0 + rocksCollected.rockCount;
+    public static int rockCountlvl5 = 0 + rocksCollected4.rockCountlvl4;
 
     public Text rockText;
 
@@ -25,13 +25,13 @@ public class rocksCollectedLevel2 : MonoBehaviour
     {
         //Checks if 5 rocks have been collected... 
         //We can change this number later if needed
-        if (rockCountlvl2 == 5)
+        if (rockCountlvl5 == 5)
         {
             //Adds a life
             lives.livesCount += 1;
 
             //Resets the amount of rocks collected
-            rockCountlvl2 = 0;
+            rockCountlvl5 = 0;
 
             //Console Message that displays extra life
             //We will put a sound effect in place here
@@ -44,7 +44,7 @@ public class rocksCollectedLevel2 : MonoBehaviour
         }
 
         //Updates the rock collection text
-        rockText.text = "Gears: " + rockCountlvl2;
+        rockText.text = "Gears: " + rockCountlvl5;
 
 
     }
