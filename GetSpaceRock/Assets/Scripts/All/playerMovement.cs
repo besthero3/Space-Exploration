@@ -102,25 +102,57 @@ public class playerMovement : MonoBehaviour
         }
         if (other.tag == "Level_5")
         {
-            SceneManager.LoadScene("FinishedLevel2 2");
+            SceneManager.LoadScene("FinishedLevel3 1");
             enemyHealth.enemyHealthNum = 30;
         }
         if (other.tag == "Level_6")
         {
-            SceneManager.LoadScene("Level_6");
+            SceneManager.LoadScene("FinishedLevel3 2");
             enemyHealth.enemyHealthNum = 30;
         }
         if (other.tag == "Level_7")
         {
-            SceneManager.LoadScene("Level_7");
+            SceneManager.LoadScene("FinishedLevel3 3");
+            enemyHealth.enemyHealthNum = 30;
+        }
+        if (other.tag == "Level_8")
+        {
+            SceneManager.LoadScene("FinishedLevel3 4");
             enemyHealth.enemyHealthNum = 30;
         }
 
 
         if (other.tag == "dialogue1") {
             speed = 0;
-            StartCoroutine(Dialogue());
+            StartCoroutine(Dialogue1());
          //speed = 10; 
+            Destroy(other.gameObject);
+            //MAKE coroutines
+            //Player speed = 0;
+        }
+        if (other.tag == "dialoge2")
+        {
+            speed = 0;
+            StartCoroutine(Dialogue2());
+            //speed = 10; 
+            Destroy(other.gameObject);
+            //MAKE coroutines
+            //Player speed = 0;
+        }
+        if (other.tag == "dialoge3")
+        {
+            speed = 0;
+            StartCoroutine(Dialogue3());
+            //speed = 10; 
+            Destroy(other.gameObject);
+            //MAKE coroutines
+            //Player speed = 0;
+        }
+        if (other.tag == "dialoge4")
+        {
+            speed = 0;
+            StartCoroutine(Dialogue4());
+            //speed = 10; 
             Destroy(other.gameObject);
             //MAKE coroutines
             //Player speed = 0;
@@ -204,7 +236,7 @@ public class playerMovement : MonoBehaviour
     }
 
 
-    IEnumerator Dialogue()
+    IEnumerator Dialogue1()
     {
 
         dialogueText.text = "Astronaut 1: Thank goodness you found us, Captain! Did you see those robots(?) that were coming after us?";
@@ -230,6 +262,60 @@ public class playerMovement : MonoBehaviour
 
         dialogueText.text = "To start, collect green item!";
         speed = 10; 
+        yield return new WaitForSeconds(1);
+
+
+        Destroy(blocker);
+    }
+
+    IEnumerator Dialogue2()
+    {
+
+        dialogueText.text = "Astronaut 1: Captain, come help us! There’s something you need to see!";
+        yield return new WaitForSeconds(2);
+
+        dialogueText.text = "Astronaut 2: Be sure to collect all the gears you see along the way… we’re going to need them!";
+        yield return new WaitForSeconds(3);
+
+        dialogueText.text = " ";
+        speed = 10;
+        yield return new WaitForSeconds(1);
+
+
+        Destroy(blocker);
+    }
+
+    IEnumerator Dialogue3()
+    {
+
+        dialogueText.text = "Astronaut 1: Here we are, Captain. Planet Aeries. See if you can find the crew members of Artemis 18. Be careful, though - there may be alien life forms lurking about!";
+        yield return new WaitForSeconds(4);
+
+        dialogueText.text = " ";
+        speed = 10;
+        yield return new WaitForSeconds(1);
+
+
+        Destroy(blocker);
+    }
+
+    IEnumerator Dialogue4()
+    {
+
+        dialogueText.text = "Artemis Astronaut: Hello there! Are you the captain of the Achilles mission? I was wondering what happened to your ship after your comms went down.";
+        yield return new WaitForSeconds(3);
+
+        dialogueText.text = "Artemis Astronaut: Wait, what do you mean, Earth is gone?";
+        yield return new WaitForSeconds(2);
+
+        dialogueText.text = "Artemis Astronaut: Well, it’s evident that Planet Aeries isn’t hospitable. These volcanoes and lava monsters don’t exactly make it a good place to live.";
+        yield return new WaitForSeconds(4);
+
+        dialogueText.text = "Artemis Astronaut: I’m ready to get out of here. Let’s go to Planet Atropos and find out how the second Andromeda mission, Athena 22, is doing.";
+        yield return new WaitForSeconds(4);
+
+        dialogueText.text = " ";
+        speed = 10;
         yield return new WaitForSeconds(1);
 
 

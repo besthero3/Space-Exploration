@@ -26,6 +26,10 @@ TagManager:
   - movingPlatform3
   - movingPlatform4
   - Level_7
+  - Level_8
+  - dialoge2
+  - dialoge3
+  - dialoge4
   layers:
   - Default
   - TransparentFX

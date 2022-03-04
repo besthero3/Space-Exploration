@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 1523195242}
   - component: {fileID: 1523195241}
   - component: {fileID: 1523195240}
-  - component: {fileID: 1523195239}
+  - component: {fileID: 1523195243}
   m_Layer: 0
   m_Name: rocketFlying-1.png
   m_TagString: Untagged
@@ -226,18 +226,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1523195239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523195238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 044ac5416bba9b042ac97e02572b4eec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1523195240
 Animator:
   serializedVersion: 4
@@ -325,3 +313,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1523195243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523195238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e45a4a2bc381dc4c8ead8f5f8e03db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
