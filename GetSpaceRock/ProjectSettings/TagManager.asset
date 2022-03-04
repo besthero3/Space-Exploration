@@ -30,6 +30,9 @@ TagManager:
   - dialoge2
   - dialoge3
   - dialoge4
+  - dialoge5
+  - GameOver
+  - fin
   layers:
   - Default
   - TransparentFX

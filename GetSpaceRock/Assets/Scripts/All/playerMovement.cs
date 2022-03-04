@@ -145,6 +145,11 @@ public class playerMovement : MonoBehaviour
             SceneManager.LoadScene("FinishedLevel3 4");
             enemyHealth.enemyHealthNum = 30;
         }
+        if (other.tag == "fin")
+        {
+            SceneManager.LoadScene("endScreen");
+            enemyHealth.enemyHealthNum = 30;
+        }
 
 
         if (other.tag == "dialogue1") {
@@ -182,6 +187,16 @@ public class playerMovement : MonoBehaviour
             //MAKE coroutines
             //Player speed = 0;
         }
+        if (other.tag == "dialoge5")
+        {
+            speed = 0;
+            StartCoroutine(Dialogue5());
+            //speed = 10; 
+            Destroy(other.gameObject);
+            //MAKE coroutines
+            //Player speed = 0;
+        }
+
 
     }
 
@@ -265,7 +280,7 @@ public class playerMovement : MonoBehaviour
     IEnumerator Dialogue1()
     {
 
-        dialogueText.text = "Astronaut 1: Thank goodness you found us, Captain! Did you see those robots(?) that were coming after us?";
+        dialogueText.text = "Astronaut 1: Thank goodness you found us, Captain!";
         yield return new WaitForSeconds(3);
 
         dialogueText.text = "Astronaut 2: We have bigger problems to worry about. Captain, the Earth… it’s gone.";
@@ -274,8 +289,8 @@ public class playerMovement : MonoBehaviour
         dialogueText.text = "Astronaut 1: …";
         yield return new WaitForSeconds(2);
 
-        dialogueText.text = "Astronaut 2: We have enough supplies and fuel on the rocket to finish our original mission, exploring the nearby Andromeda Galaxy for new planets and life forms.";
-        yield return new WaitForSeconds(4);
+        dialogueText.text = "Astronaut 2: We have enough supplies and fuel on the rocket to finish our original mission, exploring the nearby Andromeda Galaxy for new planets and life forms. With enough gears, we can upgrade our spaceship to reach each new world.";
+        yield return new WaitForSeconds(5);
 
         dialogueText.text = "But now, we won’t just be searching for the sake of science. We have to find a new home, somewhere we can begin again.";
         yield return new WaitForSeconds(3);
@@ -339,6 +354,26 @@ public class playerMovement : MonoBehaviour
 
         dialogueText.text = "Artemis Astronaut: I’m ready to get out of here. Let’s go to Planet Atropos and find out how the second Andromeda mission, Athena 22, is doing.";
         yield return new WaitForSeconds(4);
+
+        dialogueText.text = " ";
+        speed = 10;
+        yield return new WaitForSeconds(1);
+
+
+        Destroy(blocker);
+    }
+
+    IEnumerator Dialogue5()
+    {
+
+        dialogueText.text = "Astronaut: Wow this planet seems to be empty of aggressive life forms! And it’s so bright and colorful!";
+        yield return new WaitForSeconds(3);
+
+        dialogueText.text = "Captain: It appears we have found a place to live! With all the gears we collected, we can build a house here.";
+        yield return new WaitForSeconds(3);
+
+        dialogueText.text = "Astronaut: Nothing’s tried to kill us… yet! Huzzah!";
+        yield return new WaitForSeconds(2);
 
         dialogueText.text = " ";
         speed = 10;
